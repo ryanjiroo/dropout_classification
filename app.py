@@ -1,14 +1,9 @@
 import streamlit as st
 import pandas as pd
-import joblib
-import urllib.request
-import io
+import pickle
 
 # Load model dari raw GitHub URL
-url = 'https://raw.githubusercontent.com/ryanjiroo/dropout_classification/main/rf_model.pkl'
-response = urllib.request.urlopen(url)
-model_file = io.BytesIO(response.read())
-loaded_rf_model = joblib.load(model_file)
+loaded_rf_model = pickle.load(rf_model.pkl)
 
 # OPTIONAL: load the label encoder if class labels were encoded
 # label_encoder = joblib.load('label_encoder.pkl')
