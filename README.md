@@ -5,6 +5,7 @@
 Jaya Jaya Institut merupakan salah satu institusi pendidikan perguruan yang telah berdiri sejak tahun 2000. Hingga saat ini, institusi ini telah mencetak banyak lulusan dengan reputasi yang sangat baik. Namun, terdapat permasalahan serius terkait tingginya jumlah siswa yang tidak menyelesaikan pendidikannya alias **dropout**.
 
 Jumlah dropout yang tinggi ini menjadi masalah besar bagi institusi pendidikan karena dapat menurunkan reputasi, menimbulkan kerugian finansial, dan menurunkan efektivitas proses pembelajaran. Oleh karena itu, Jaya Jaya Institut ingin mendeteksi sedini mungkin siswa yang berisiko melakukan dropout agar dapat diberikan bimbingan khusus dan intervensi tepat waktu.
+
 ---
 
 ### Permasalahan Bisnis
