@@ -1,9 +1,14 @@
 import streamlit as st
 import pandas as pd
 import joblib
+import urllib.request
+import io
 
-# Load the saved Random Forest model
-loaded_rf_model = joblib.load('rf_model.pkl')
+# Load model dari raw GitHub URL
+url = 'https://raw.githubusercontent.com/ryanjiroo/dropout_classification/main/rf_model.pkl'
+response = urllib.request.urlopen(url)
+model_file = io.BytesIO(response.read())
+loaded_rf_model = joblib.load(model_file)
 
 # OPTIONAL: load the label encoder if class labels were encoded
 # label_encoder = joblib.load('label_encoder.pkl')
