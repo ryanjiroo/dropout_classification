@@ -33,13 +33,25 @@ Jumlah dropout yang tinggi ini menjadi masalah besar bagi institusi pendidikan k
 
 ### Persiapan
 
-**Sumber Data:** Dataset performa siswa dari Jaya Jaya Institut (contoh: students' performance)
+**Sumber Data:** [Dataset performa siswa dari Jaya Jaya Institut](https://github.com/dicodingacademy/dicoding_dataset/blob/main/students_performance/README.md)
 
-**Setup Environment:**
+**Setup Environment - Shell/Terminal:**
 
 ```bash
+pip install pipenv
+pipenv install
+pipenv shell
 pip install -r requirements.txt
 ```
+
+**Setup Environment - Anaconda:**
+
+```bash
+conda create --name main-ds python=3.9
+conda activate main-ds
+pip install -r requirements.txt
+```
+
 ## Business Dashboard
 
 **Deskripsi:**  
@@ -51,8 +63,6 @@ Dashboard yang dibuat berfungsi untuk:
   - Status penerima beasiswa
   - Nilai semester pertama dan kedua
 - Menyediakan visualisasi interaktif yang memudahkan staf akademik dalam memahami performa siswa dan potensi risiko dropout.
-
-*Link dashboard (misal Tableau Public, Power BI, Metabase) dapat ditambahkan jika tersedia.*
 
 ---
 
@@ -81,3 +91,4 @@ Untuk menekan angka dropout, beberapa langkah yang direkomendasikan adalah:
 
 > **Deployment:**  
 > Aplikasi ini telah dideploy menggunakan [Streamlit](https://dropoutclassification.streamlit.app/)
+> Atau jalankan di lokal menggunakan ```streamlit run nama_file.py```
